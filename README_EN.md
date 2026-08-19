@@ -1,40 +1,49 @@
-# dsh-custom-logo
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="dsh-custom-logo: upload two pictures and the dsh favicon and sidebar logo are replaced — default branding becomes yours">
+</p>
 
-Put your own branding on [DeepSeek Harness](https://github.com/deepseek-ai) (dsh): upload two pictures and the tab favicon plus sidebar logo are replaced automatically. No image editing, no CLI steps, applied on the spot.
+<h3 align="center">Two pictures in, the whole DeepSeek Harness branding out</h3>
 
-English | [简体中文](./README.md)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-4D6BFE?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/badge/license-MIT-FFB454?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/dependencies-0-8C97AE?style=for-the-badge" alt="zero dependencies">
+  <img src="https://img.shields.io/badge/platform-dsh%20web-101A2E?style=for-the-badge" alt="dsh web platform">
+</p>
 
-## What you get
+<p align="center">English · <a href="./README.md"><strong>简体中文</strong></a></p>
 
-| Replaced surface | Which image | Result |
-|---|---|---|
-| Browser tab / bookmark icon | Square image | favicon becomes yours |
-| Sidebar brand area (expanded) | Wide image | replaces the DeepSeek Harness wordmark |
-| Collapsed rail icon | Square image | replaces the fish icon |
+---
 
-After install a **Brand** button appears at the bottom of the sidebar:
+Put your own branding on [DeepSeek Harness](https://github.com/deepseek-ai) (dsh): after install a **Brand** button appears at the bottom of the sidebar. Pick one square image and one wide image — the plugin crops, scales, and swaps the favicon and sidebar logo automatically. **No image editing, no restart, survives upgrades.**
 
-- **Web icon** — pick any square-ish PNG/JPG/WebP; it is center-cropped and resized to a standard PNG in the browser
-- **Sidebar logo** — pick a wide image (~3:1 recommended); it is scaled proportionally and shown at 42px height
-- **Reset to default** — one click restores the native dsh branding
+## Two pictures, three surfaces
 
-Uploads apply after an automatic page reload. No server restart, no manual sizing.
+<p align="center">
+  <img src="./assets/readme/flow.svg" width="100%" alt="Two upload cards flow through in-browser Canvas processing and replace three surfaces: the browser favicon, the expanded sidebar wide logo, and the collapsed rail round icon">
+</p>
+
+- **Browser tab** — the square image is center-cropped into the favicon; the bookmark icon updates too
+- **Expanded sidebar** — the wide image scales proportionally, replacing the native wordmark at 42px height
+- **Collapsed rail** — the square image shrinks into a 36px round icon
+
+All processing happens in the browser. Uploads apply after an automatic page reload — no server restart, no manual sizing.
 
 ## Install
 
-### Option 1: from npm (recommended)
+**Option 1: from npm (recommended)**
 
 ```bash
 dsh plugin --profile web add dsh-custom-logo
 ```
 
-### Option 2: straight from GitHub
+**Option 2: straight from GitHub**
 
 ```bash
 dsh plugin --profile web add github:dawsondx/dsh-custom-logo
 ```
 
-### Option 3: clone and add (review source / contribute)
+**Option 3: clone and add (review source / contribute)**
 
 ```bash
 git clone https://github.com/dawsondx/dsh-custom-logo.git
