@@ -1,0 +1,14 @@
+# dsh-custom-logo — mount row
+#
+# Registers the custom web logo plugin in the dsh web profile. The host half
+# serves logo PNGs from <DSH_HOME>/branding/ over /custom-logo/* (plus
+# loopback-only upload/reset endpoints) and re-taps index.html on every
+# request to rewrite the favicon and inject the brand CSS; the browser half
+# adds a sidebar footer action with the upload panel.
+#
+# Because this is a patch row on the user profile (not inside the shipped
+# @deepseek-ai packages), a dsh upgrade never overwrites it. Swap the logos
+# any time from the in-app panel (or drop PNGs into ~/.dsh/branding/).
+- insert:
+    - id: custom-logo
+      name: dsh-custom-logo
