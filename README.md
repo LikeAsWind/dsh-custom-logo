@@ -5,7 +5,7 @@
 <h3 align="center">上传两张图，换掉 DeepSeek Harness 整套品牌标识</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-4D6BFE?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/npm/v/dsh-custom-logo.svg?color=4D6BFE&style=for-the-badge" alt="npm version">
   <img src="https://img.shields.io/badge/license-MIT-FFB454?style=for-the-badge" alt="MIT License">
   <img src="https://img.shields.io/badge/dependencies-0-8C97AE?style=for-the-badge" alt="零依赖">
   <img src="https://img.shields.io/badge/platform-dsh%20web-101A2E?style=for-the-badge" alt="dsh web 平台">
@@ -15,7 +15,7 @@
 
 ---
 
-给 [DeepSeek Harness](https://github.com/deepseek-ai)（dsh）换上你自己的品牌：安装后侧边栏底部多一个「品牌」按钮，选一张方形图、一张横向宽图，插件自动裁切缩放并替换 favicon 与侧边栏 Logo——**免切图、免重启、升级不丢**。
+给 [DeepSeek Harness](https://github.com/deepseek-ai)（dsh）换上你自己的品牌：安装后在设置弹窗里多一个「品牌设置」分区（与「通用 / 模型 / 插件」并列），选一张方形图、一张横向宽图，插件自动裁切缩放并替换 favicon 与侧边栏 Logo——**免切图、免重启、升级不丢**。
 
 ## 两张图，三处生效
 
@@ -50,11 +50,11 @@ git clone https://github.com/dawsondx/dsh-custom-logo.git
 dsh plugin --profile web add ./dsh-custom-logo
 ```
 
-安装后重启 dsh（`dsh start --profile web` 或你的启动脚本），侧边栏底部即出现「品牌」按钮。
+安装后重启 dsh（`dsh start --profile web` 或你的启动脚本），设置弹窗即出现「品牌设置」分区。
 
 ## 使用
 
-1. 点击侧边栏底部「品牌」按钮
+1. 打开设置弹窗，在左侧导航选择「品牌设置」
 2. 「网页图标」卡片 → 选择图片 → 自动处理并刷新
 3. 「侧边栏 Logo」卡片 → 选择图片 → 自动处理并刷新
 4. 不满意随时重传；想回原版点「恢复默认」

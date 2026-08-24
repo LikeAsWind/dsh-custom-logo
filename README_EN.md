@@ -5,7 +5,7 @@
 <h3 align="center">Two pictures in, the whole DeepSeek Harness branding out</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-4D6BFE?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/npm/v/dsh-custom-logo.svg?color=4D6BFE&style=for-the-badge" alt="npm version">
   <img src="https://img.shields.io/badge/license-MIT-FFB454?style=for-the-badge" alt="MIT License">
   <img src="https://img.shields.io/badge/dependencies-0-8C97AE?style=for-the-badge" alt="zero dependencies">
   <img src="https://img.shields.io/badge/platform-dsh%20web-101A2E?style=for-the-badge" alt="dsh web platform">
@@ -15,7 +15,7 @@
 
 ---
 
-Put your own branding on [DeepSeek Harness](https://github.com/deepseek-ai) (dsh): after install a **Brand** button appears at the bottom of the sidebar. Pick one square image and one wide image — the plugin crops, scales, and swaps the favicon and sidebar logo automatically. **No image editing, no restart, survives upgrades.**
+Put your own branding on [DeepSeek Harness](https://github.com/deepseek-ai) (dsh): after install a **Branding** section appears in the settings dialog (alongside General / Models / Plugins). Pick one square image and one wide image — the plugin crops, scales, and swaps the favicon and sidebar logo automatically. **No image editing, no restart, survives upgrades.**
 
 ## Two pictures, three surfaces
 
@@ -50,11 +50,11 @@ git clone https://github.com/dawsondx/dsh-custom-logo.git
 dsh plugin --profile web add ./dsh-custom-logo
 ```
 
-Restart dsh afterwards (`dsh start --profile web`) and the Brand button appears.
+Restart dsh afterwards (`dsh start --profile web`) and the Branding section appears in the settings dialog.
 
 ## Usage
 
-1. Click **Brand** at the bottom of the sidebar
+1. Open the settings dialog and pick **Branding** in the left nav
 2. **Web icon** card → choose an image → processed and applied automatically
 3. **Sidebar logo** card → choose an image → processed and applied automatically
 4. Re-upload any time; **Reset to default** restores the originals

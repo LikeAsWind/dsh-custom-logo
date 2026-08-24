@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.2 — 2026-08-23
+
+- Entry point moved from the sidebar footer action into the official
+  settings dialog: the plugin now registers a first-level `settings.section`
+  nav row (after Skin Center) with the same two upload cards inline.
+  Fixes the badge not appearing for some sidebar compositions.
+- Dropped the `@deepseek-ai/dsh-client-ui-primitives` client dependency
+  (no more icon imports; self-contained section markup).
+
+## 1.0.1 — 2026-08-19
+
+- README (zh/en) redesigned: project-native hero and "two pictures, three
+  surfaces" flow diagram; badges switched to live npm version badge.
+  No functional changes.
+
 ## 1.0.0 — 2026-08-19
 
 First open-source release.
