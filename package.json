@@ -1,7 +1,7 @@
 {
   "name": "dsh-custom-logo",
   "description": "DSH web plugin: replace the DeepSeek Harness branding (tab favicon, sidebar wide logo, collapsed rail icon) with your own images — upload two pictures from the settings dialog, no manual resizing",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -17,7 +17,8 @@
       "platform": "web",
       "inject": [
         "@deepseek-ai/dsh-client-locale",
-        "@deepseek-ai/dsh-client-runtime"
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
       ]
     }
   },
